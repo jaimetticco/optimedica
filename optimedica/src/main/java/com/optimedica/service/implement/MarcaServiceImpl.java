@@ -27,7 +27,7 @@ public class MarcaServiceImpl implements MarcaService {
 
     @Override
     @Transactional
-    public Marca guardar(Marca marca) {
+    public Marca nuevo(Marca marca) {
         return repository.save(marca);
     }
 
