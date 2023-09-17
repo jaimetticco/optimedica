@@ -1,0 +1,2 @@
+# optimedica
+proyecto optimedica jonathan
