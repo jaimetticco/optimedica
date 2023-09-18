@@ -17,13 +17,13 @@ public class MarcaController {
     @Autowired
     private MarcaService service;
 
-    @GetMapping("/listarTodo")
+    @GetMapping("/listar")
     public ResponseEntity<List<Marca>> listarMarcas(){
         List<Marca> marc = service.listarMarca();
         return new ResponseEntity<List<Marca>>(marc, HttpStatus.OK);
     }
 
-    @PostMapping("/nuevo")
+    @PostMapping("/agregar")
     public ResponseEntity<Marca> agragarMarca(@Validated @RequestBody Marca marca){
         Marca marca1 = service.nuevo(marca);
         return new ResponseEntity<Marca>(marca1, HttpStatus.OK);

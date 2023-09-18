@@ -18,5 +18,6 @@ public class Marca {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_marca;
     private String marca;
+    private String imagen;
 
 }
